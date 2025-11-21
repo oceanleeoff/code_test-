@@ -1,3 +1,8 @@
 def solution(numlist, n):
-    answer = []
-    return answer
+    def func(x):
+        return (abs(x - n), -x)
+    
+    return sorted(numlist, key=func)
+
+    
+    
